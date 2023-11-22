@@ -1,0 +1,6 @@
+1. Trình duyệt cache ảnh từ 1 url là như thế nào, có phải nó tải ảnh đó về local không?
+
+2. Ảnh với mã hóa base64 không được cache bởi trình duyệt là như thế nào? Bản chất uri đã chứa dữ liệu ảnh rồi sao lại phải cache?
+
+3. Chuyện gì xảy ra khi nhúng các thẻ link vào thẻ head
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
