@@ -4,3 +4,8 @@
 
 3. Chuyện gì xảy ra khi nhúng các thẻ link vào thẻ head
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+4. Khi lồng các phần tử vào nhau, thì kích thước của con phụ thuộc vào cha hay kích thước cha phụ thuộc con
+
+
+5. <a href=""></a> vs <a href="#"></a>, nên dùng cái nào nếu muốn dùng 1 link rỗng ở đây
