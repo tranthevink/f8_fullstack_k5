@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1</title>
+    <style>
+        th {
+            text-align: left;
+            padding-top: 20px;
+        }
+        
+        input,
+        select {
+            width: 85%;
+            height: 35px;
+            border-color: #bebebe;
+            border-width: 2px;
+            border-style: solid;
+        }
+        
+        select {
+            width: 87%;
+        }
+        
+        .submit {
+            background-color: #08768d;
+            color: white;
+            border-color: black;
+            margin-top: 20px;
+            width: 30%;
+            height: 50px;
+        }
+        
+        body {
+            background-color: #e7e7e7;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 50%;">
+        <div>
+            <h1>Try a free sample</h1>
+            <p style="width: 65%;"> Sign up to get a coupon you can redeem at your nearest Dancing Goat cafe for a sample of the Colombia Carlos Imbachi coffee. We'll also make sure you don't miss out on news introducing the new coffees that we add to our store regularly.
+            </p>
+        </div>
+        <div style="margin-top: 10px;">
+            <form action="./common.html">
+                <table width="100%" cellspacing="0">
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="John"></td>
+                        <td><input type="text" value="Smith"></td>
+                    </tr>
+                    <tr>
+                        <th>Email address</th>
+                        <th>Address</th>
+                    </tr>
+                    <tr>
+                        <td><input type="email" value="john@example.com"></td>
+                        <td><input type="text" value="Silk St"></td>
+                    </tr>
+                    <tr>
+                        <th>City</th>
+                        <th>State <span style="color: #aca6a7;">(optional)</span></th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="London"></td>
+                        <td><input type="text" value=""></td>
+                    </tr>
+                    <tr>
+                        <th>ZIP code</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="EC2Y 8DS"></td>
+                        <td>
+                            <select name="country" id="countryId">
+                                <option value="united-kingdom">United Kingdom</option>
+                                <option value="viet-nam">Viet Nam</option>
+                                <option value="indonesia">Indonesia</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                </table>
+                <input type="submit" value="SEND ME FREE COFFEE" class="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
