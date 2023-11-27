@@ -1,0 +1,47 @@
+.left_side {
+    background-color: #f6f6f6;
+}
+
+td {
+    width: 200px;
+    height: 20px;
+    background-color: white;
+    margin: -2px;
+}
+
+table {
+    border: 1px;
+    border: #af9656 1px solid;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 50px;
+}
+
+#first_location {
+    background-color: #af9656;
+    color: white;
+}
+
+.the_other_locations {
+    background-color: white;
+    color: #af9656;
+}
+
+.left_side {
+    width: 33%;
+}
+
+.right_side {
+    width: 66.67%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.contact_detail {
+    margin-left: 50px;
+    margin-top: 50px;
+}

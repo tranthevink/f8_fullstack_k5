@@ -1,0 +1,64 @@
+.icon {
+    width: 30px;
+    float: left;
+    margin-right: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+td {
+    height: 1px;
+}
+
+#contact_info_body {
+    height: 100%;
+    color: #b7b7b7;
+}
+
+button {
+    background-color: #17b9b6;
+    width: 140px;
+    height: 40px;
+    border-color: #17b9b6;
+}
+
+.contact_info_detail {
+    margin-top: 50px;
+}
+
+table {
+    text-align: left;
+}
+
+.right_contact {
+    width: 66.67%;
+}
+
+.left_contact {
+    width: 33.33%;
+}
+
+section {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#contact_underline {
+    letter-spacing: -4px;
+    color: #febc45;
+    font-size: 30px;
+}
+
+h1 {
+    margin-bottom: 0px;
+}

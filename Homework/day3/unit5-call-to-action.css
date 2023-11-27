@@ -1,0 +1,15 @@
+.top_element {
+    width: 100px;
+    height: 30px;
+    background-color: #8498cb;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#shared_hosting {
+    color: #07aae9;
+}
+
+.top_wrapper {
+    text-align: center;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Html Form</h1>
+    <ol>
+        <li>Trong 1 trang web có thể có 1 hoặc nhiều form</li>
+        <li>Các form trên 1 trang không được lồng nhau</li>
+        <li>Không dùng kiểu number của input để nhập số điện thoại vì mất dấu cộng, mất số 0 nếu số 0 đứng đầu, có thể
+            nhập ký tự e, thường dùng input dạng text rồi dùng css để format</li>
+    </ol>
+    <h2>get method</h2>
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name_of_user" placeholder="Enter your name here" id="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email here" id="email">
+        </div>
+        <div>
+            <label for="password">
+                Password:</label>
+            <input type="password" name="password" placeholder="Enter your password here" id="password">
+        </div>
+        <div>
+            <label for="age">
+                Age:</label>
+            <input type="number" name="age" placeholder="Enter your age here" id="age" min="0" max="160" step="0.5">
+        </div>
+        <div>
+            <label for="avatar">
+                Avatar:</label>
+            <input type="file" name="avatar" placeholder="Enter your avatar here" id="avatar" multiple>
+        </div>
+        <div>
+            <label for="dob">
+                Data of birth:</label>
+            <input type="date" name="dob" placeholder="Enter your date of birth here" id="dob">
+        </div>
+        <div>
+            <label for="color">
+                Pick a color:</label>
+            <input type="color" name="color" placeholder="Enter your color here" id="color">
+        </div>
+        <div>
+            <label>
+                Pick your sex:</label>
+            <label><input type="radio" name="sex" value="male" checked> Nam</label>
+            <label><input type="radio" name="sex" value="female"> Nữ</label>
+            <label><input type="radio" name="unknown"> Khác</label>
+        </div>
+        <div>
+            <label>
+                Pick your style of studying:</label>
+            <label><input type="radio" name="type_learning" value="online" checked> Online</label>
+            <label><input type="radio" name="type_learning" value="offline" checked> Offline</label>
+        </div>
+        <div>
+            <label>
+                Where you know F8:</label>
+            <label><input type="checkbox" name="source_to_know[]" value="from_facebook" checked> Facebook</label>
+            <label><input type="checkbox" name="source_to_know[]" value="from_friends"> Friends</label>
+            <label><input type="checkbox" name="source_to_know[]" value="from_tiktok" checked> Tiktok</label>
+        </div>
+        <div>
+            <label>
+                Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here">Feedback from me
+            Newline1
+            Newline2
+            </textarea>
+        </div>
+        <div>
+            <label>
+                Province:</label>
+            <select name="province" id="province">
+                <option value="hanoi">Ha Noi</option>
+                <option value="tphcm" selected>Tp Ho Chi Minh</option>
+                <option value="danang">Da Nang</option>
+            </select>
+        </div>
+        <button>Default is submit</button>
+        <button type="button">used for js</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <h2>post method</h2>
+    <form action=" https://api-gateway.fullstack.edu.vn/action_page.php " method=" post ">
+        <div>
+            <label for=" name_post ">Name:</label>
+            <input type=" text " name=" name_of_user " placeholder=" Enter your name here " id=" name_post ">
+        </div>
+        <div>
+            <label for=" email_post ">Email:</label>
+            <input type=" email " name=" email " placeholder=" Enter your email here " id=" email_post ">
+        </div>
+        <button>Register</button>
+    </form>
+    <form action=" https://api-gateway.fullstack.edu.vn/action_page.php " method=" post ">
+        <div>
+            <label for="only_one_field">Only one field No need submit button in form tag:</label>
+            <input type="text" name="only_one_field" placeholder=" Enter your name here " id="only_one_field">
+        </div>
+    </form>
+    <form action=" https://api-gateway.fullstack.edu.vn/action_page.php " method=" post ">
+        <div>
+            <label for="missing_submit_button">need submit button in this form:</label>
+            <input type="text" name="missing_submit_button" placeholder=" Enter your name here "
+                id="missing_submit_button">
+        </div>
+        <div>
+            <label for="missing_submit_button2">need submit button in this form:</label>
+            <input type="text" name="missing_submit_button2" placeholder=" Enter your name here "
+                id="missing_submit_button2">
+        </div>
+    </form>
+    <form action=" https://api-gateway.fullstack.edu.vn/action_page.php " method=" post ">
+        <div>
+            <label for="required_field">required_field:</label>
+            <input type="text" name="required_field" placeholder=" Enter your name here " id="required_field" required>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>

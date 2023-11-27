@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="unit3-form-access-manager.css">
+</head>
+
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <th>
+                    <label for="user_name">Username:</label>
+                </th>
+                <td>
+                    <input type="text" id="user_name">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td><input type="text" id="password"></td>
+            </tr>
+            <tr>
+                <th><label for="city_of_employment">City of Employment:</label></th>
+                <td><input type="text" id="city_of_employment"></td>
+            </tr>
+            <tr>
+                <th><label for="web_server">City of Employment:</label></th>
+                <td>
+                    <select id="web_server">
+                        <option>
+                            --Choose a server--
+                        </option>
+                        <option>
+                            Server 1
+                        </option>
+                        <option>
+                            Server 2
+                        </option>
+                        <option>
+                            Server 3
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="role">Please specify your role:</label></th>
+                <td>
+                    <div>
+                        <label><input id="role" type="radio" name="role" value="admin"> Admin</label>
+                        <label><input id="role" type="radio" name="role" value="engineer"> Engineer</label>
+                        <label><input id="role" type="radio" name="role" value="manager"> Manager</label>
+                        <label><input id="role" type="radio" name="role" value="guest"> Guest</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th> <label for="sign_on_to">Single Sign-on to the following:</label></th>
+                <td>
+                    <div>
+                        <label><input id="sign_on_to" type="checkbox" name="sign_on_to[]" value="mail"> Mail</label>
+                        <label><input id="sign_on_to" type="checkbox" name="sign_on_to[]" value="payroll">
+                            Payroll</label>
+                        <label><input id="sign_on_to" type="checkbox" name="sign_on_to[]" value="self_service">
+                            Self-service</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <div>
+                        <button type="submit">Login</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+    </form>
+</body>
+
+</html>
