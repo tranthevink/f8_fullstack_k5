@@ -41,11 +41,12 @@ table {
 }
 
 .right_contact {
-    width: 66.67%;
+    width: 70%;
+    padding-right: 50px;
 }
 
 .left_contact {
-    width: 33.33%;
+    width: 30%;
 }
 
 section {
