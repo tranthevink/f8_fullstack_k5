@@ -10,7 +10,7 @@ input {
 }
 
 label {
-    width: auto;
+    width: 10%;
     height: 20px;
     background-color: #f5f5f5;
     display: inline-block;
@@ -49,64 +49,71 @@ section .products div span {
     content: '$';
 }
 
-#image_1 {
-    width: 100%;
-    height: 150px;
-    background: url("https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png") no-repeat center center;
-    background-size: 100%;
+.product_price {
+    font-weight: 900;
 }
 
-#image_1:hover {
+#image_1 {
     width: 100%;
-    height: 150px;
+    height: 200px;
+    background: url("https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png") no-repeat center center;
+    background-size: contain;
+    position: relative;
+}
+
+#image_1:hover,
+header:has( label[for="skincare"]:active)+section #image_1 {
     background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
 }
 
 #image_2 {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: url("https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
+    position: relative;
 }
 
-#image_2:hover {
-    width: 100%;
-    height: 150px;
+#image_2:hover,
+header:has( label[for="haircare"]:active)+section #image_2 {
     background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
     background-size: 100%;
 }
 
 #image_3 {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: url("https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
+    position: relative;
 }
 
-#image_3:hover {
-    width: 100%;
-    height: 150px;
+#image_3:hover,
+header:has( label[for="cosmetics"]:active)+section #image_3 {
     background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
 }
 
 #image_4 {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: url("https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-13-pro-max.png") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
+    position: relative;
 }
 
-#image_4:hover {
-    width: 100%;
-    height: 150px;
+#image_4:hover,
+header:has( label[for="fragrance"]:active)+section #image_4 {
     background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+    background-size: contain;
+    position: relative;
 }
 
 .products {
-    width: 200px;
+    width: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .product_name>p,
@@ -134,30 +141,54 @@ label[for="fragrance"]:active {
     color: white;
 }
 
-header:has( label[for="skincare"]:active)+section #image_1 {
+.on_image {
+    height: 50px;
     width: 100%;
-    height: 150px;
-    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+    bottom: 0px;
+    position: absolute;
 }
 
-header:has( label[for="haircare"]:active)+section #image_2 {
-    width: 100%;
-    height: 150px;
-    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
+.interactor_wrapper>.heart_interactor,
+.interactor_wrapper>.evaluating_interactor,
+.interactor_wrapper>.viewing_interactor {
     background-size: 100%;
+    width: 36px;
+    height: 36px;
+    background: #29388e;
+    font-weight: 900;
+    font-family: 'FontAwesome';
+    color: white;
+    border: none;
+    margin-left: 4%;
+    margin-right: 5%;
 }
 
-header:has( label[for="cosmetics"]:active)+section #image_3 {
-    width: 100%;
-    height: 150px;
-    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+.interactor_wrapper>.heart_interactor:before {
+    content: "\f08a";
 }
 
-header:has( label[for="fragrance"]:active)+section #image_4 {
+.interactor_wrapper>.evaluating_interactor:before {
+    content: "\f1de";
+}
+
+.interactor_wrapper>.viewing_interactor:before {
+    content: "\f06e";
+}
+
+.interactor_wrapper {
+    margin-bottom: 5px;
+    font-size: 0px;
+}
+
+.add_to_cart {
     width: 100%;
-    height: 150px;
-    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
-    background-size: 100%;
+    border-radius: 0px;
+    border: none;
+    background-color: #29388e;
+    color: white;
+    height: 36px;
+}
+
+.ranking {
+    margin-top: 50px;
 }
