@@ -13,9 +13,18 @@ nav>a {
     padding: 10px;
     background-color: greenyellow;
     text-decoration: none;
+    opacity: 50%;
 }
 
 nav>a:hover {
     background-color: blue;
     color: white;
+}
+
+nav {
+    position: fixed;
+}
+
+main {
+    padding-top: 50px;
 }
