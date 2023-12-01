@@ -9,3 +9,6 @@
 
 
 5. <a href=""></a> vs <a href="#"></a>, nên dùng cái nào nếu muốn dùng 1 link rỗng ở đây
+
+
+6. Làm sao để có front-weight lớn hơn 900

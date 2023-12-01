@@ -1,0 +1,101 @@
+/* 
+Cấu trúc
+selector:pseudo_class{
+
+
+}
+
+1. active, focus, hover
+
+
+ */
+
+.title:hover {
+    color: red;
+}
+
+.title:active {
+    color: green;
+}
+
+
+/* .btn:active {
+    background: green;
+    color: white;
+} */
+
+.btn:focus {
+    color: red;
+}
+
+
+/* viết liền với nhau là chọn cùng 1 element */
+
+.username:focus::placeholder {
+    color: red;
+}
+
+.checkbox input:checked+span {
+    color: red;
+}
+
+
+/* select the tag span is right after the tag input with disabled attribute, the tag input in the class checkbox */
+
+
+/* .checkbox input[disabled]+span {
+    color: grey;
+}  */
+
+
+/* select the tag span is right after the tag input disabled, the tag input in the class checkbox */
+
+
+/* .checkbox input:disabled+span {
+    color: grey; */
+
+
+/* select the tag span is in the div tag without the ignored-item class, the div in the class checkbox */
+
+
+/* .checkbox div:not(.ignored-item) span {
+    color: red;
+} */
+
+
+/* select the tag h2 is the right first child of class products in a specific level*/
+
+
+/* .products h2:first-child {
+    color: red;
+} */
+
+
+/* select the tag h2 is the right last child of class products in a specific level*/
+
+
+/* .products h2:last-child {
+    color: green;
+} */
+
+
+/* select the tag h2 is the first child of type h2 of class products in a specific level*/
+
+
+/* .products h2:first-of-type {
+    color: red;
+} */
+
+
+/* select the tag h2 is the last child of type h2 of class products in a specific level*/
+
+
+/* .products h2:last-of-type {
+    color: red;
+} */
+
+
+/* 
+nth-child
+nth-of-type 
+*/

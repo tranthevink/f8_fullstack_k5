@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: #334455;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+#earn_income {
+    color: #ffa516;
+}
+
+button {
+    background-color: #f8db35;
+    height: 35px;
+    border: none;
+}
+
+input {
+    height: 30px;
+}
+
+.wrapper:hover input::placeholder {
+    color: #ffa516;
+}
+
+.wrapper:hover input {
+    background-color: #ddd;
+}
+
+.wrapper:hover button {
+    background-color: #ffa516;
+    color: white;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3 Best seller</title>
+    <link rel="stylesheet" href="unit3-best-seller.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Best Seller</h1>
+        <nav>
+            <label for="skincare">Skincare</label>
+            <input type="radio" id="skincare" onchange="changeImage()">
+            <label for="haircare">Haircare</label>
+            <input type="radio" id="haircare" onchange="changeImage()">
+            <label for="cosmetics">Cosmetics Cases</label>
+            <input type="radio" id="cosmetics" onchange="changeImage()">
+            <label for="fragrance">Fragrance</label>
+            <input type="radio" id="fragrance" onchange="changeImage()">
+        </nav>
+    </header>
+    <section>
+        <div class="products_container">
+            <div class="products">
+                <div id="image_1">
+                </div>
+                <div> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product_name">
+                    <p>Iphone</p>
+                </div>
+                <div class="product_price">
+                    <p>122.00</p>
+                </div>
+            </div>
+            <div class="products">
+                <div id="image_2">
+                </div>
+                <div> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product_name">
+                    <p>Iphone</p>
+                </div>
+                <div class="product_price">
+                    <p>122.00</p>
+                </div>
+            </div>
+            <div class="products">
+                <div id="image_3">
+                </div>
+                <div> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product_name">
+                    <p>Iphone</p>
+                </div>
+                <div class="product_price">
+                    <p>122.00</p>
+                </div>
+            </div>
+            <div class="products">
+                <div id="image_4">
+                </div>
+                <div> <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="product_name">
+                    <p>Iphone</p>
+                </div>
+                <div class="product_price">
+                    <p>122.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function changeImage() {
+            var radioSkincare = document.getElementById('skincare');
+            var radioHaircare = document.getElementById('haircare');
+            var radioCosmetics = document.getElementById('cosmetics');
+            var radioFragrance = document.getElementById('fragrance');
+            var image1 = document.getElementById('image_1');
+            var image2 = document.getElementById('image_2');
+            var image3 = document.getElementById('image_3');
+            var image4 = document.getElementById('image_4');
+
+            if (radioSkincare.checked) {
+                image1.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
+            }
+            if (radioHaircare.checked) {
+                image2.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
+            }
+            if (radioCosmetics.checked) {
+                image3.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
+            }
+
+            if (radioFragrance.checked) {
+                image4.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
+            }
+        }
+    </script>
+</body>
+
+</html>

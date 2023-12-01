@@ -1,0 +1,95 @@
+/* select the tag a in class links with target attribute equal to "_blank" */
+
+
+/* this is called attribute selector */
+
+
+/* .links a[target="_blank"] {
+    color: red;
+} */
+
+
+/* select the tag a with target attribute is in class links*/
+
+
+/* .links a[target] {
+    color: red;
+} */
+
+
+/* select all tags in class links with target attribute*/
+
+
+/* .links [target] {
+    color: red;
+}
+
+.links *[target] {
+    color: red;
+} */
+
+
+/* select all tags a in class links with href attribute beginning with https://fullstack.edu.vn*/
+
+
+/* .links a[href^="https://fullstack.edu.vn"] {
+    color: red;
+} */
+
+
+/* select all tags a in class links with href attribute containing the string fullstack.edu.vn */
+
+
+/* .links a[href*="fullstack.edu.vn"] {
+    color: red;
+} */
+
+
+/* select all tags a in class links with title attribute containing the word Trang*/
+
+
+/* .links a[title~="Trang"] {
+    color: red;
+} */
+
+
+/* select all tags a in class links with href attribute ending with the string .vn*/
+
+
+/* .links a[href$=".vn"] {
+    color: red;
+} */
+
+
+/* select all tags with class beginning with col-*/
+
+
+/* [class^="col-"] {
+    color: green;
+} */
+
+
+/* select all tags in html file */
+
+
+/* * {
+    color: red;
+} */
+
+
+/* select all tags are the first-level children of class products  */
+
+
+/* .products>* {
+    color: red;
+} */
+
+
+/* .box>.content .element p+h2~a */
+
+
+/* Chọn tất cả các thẻ a đứng sau và cùng cha với thẻ h2,
+thẻ h2 này đứng ngay sau thẻ p 
+thẻ p nằm trong class element
+ class element nằm trong class content 
+ class content là con của class box */

@@ -1,0 +1,113 @@
+/*-------------------------------------*/
+
+
+/* id, class and tag name selector  */
+
+
+/* #title {
+    color: red;
+}
+
+.title {
+    color: yellow;
+}
+
+h2 {
+    color: blueviolet;
+} */
+
+
+/*-------------------------------------*/
+
+
+/* select tag h2 is in the class content */
+
+
+/* .content h2 {
+    color: yellow;
+}
+/* select tag h2 is in the class main */
+
+
+/* .main h2 {
+    color: red;
+} */
+
+
+/*-------------------------------------*/
+
+
+/* select tag h2 is the top level child of class content */
+
+
+/* .content>h2 {
+    color: yellow;
+}
+/* select tag h2 is in the tag div, the tag div is in the class content */
+
+
+/* .content div h2 {
+    color: red;
+} */
+
+
+/*-------------------------------------*/
+
+
+/* the class title is in the class products*/
+
+
+/* .products .title {
+    color: green;
+} */
+
+
+/* select the tag h2 with the id featured, with the class title, and is in the class products */
+
+
+/* .products h2.title#featured {
+    font-style: italic;
+} */
+
+
+/*-------------------------------------*/
+
+
+/* select the tag ul standing after p, no matter how many tags between ul and p*/
+
+
+/* select the tag ul is in the div standing after p, no matter how many tags between div and p, and the tag p is in the class box*/
+
+
+/* .box p~ul,
+.box p~div ul {
+    color: red;
+} */
+
+
+/* select the tag h2 standing just after the tag p that is in the class box */
+
+
+/* .box p+h2 {
+    color: red;
+} */
+
+
+/* select the tag h2 standing just after another h2 standing just after the tag p that is in the class box */
+
+
+/* .box p+h2+h2 {
+    color: red;
+} */
+
+
+/* select the tag h2 standing after another h2 standing just after the tag p that is in the class box */
+
+
+/* .box p+h2~h2 {
+    color: red;
+}
+
+.box h2+h2 {
+    color: red;
+} */
