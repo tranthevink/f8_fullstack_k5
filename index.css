@@ -5,6 +5,11 @@ li div~div {
     margin: 20px;
 }
 
+li div~div>img {
+    width: 900px;
+    height: auto;
+}
+
 div:has(>a[href="#top"]) {
     margin-bottom: 10px;
 }
