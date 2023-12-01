@@ -2,6 +2,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    padding: 30px;
 }
 
 input {
@@ -105,7 +106,7 @@ section .products div span {
 }
 
 .products {
-    width: 100px;
+    width: 200px;
 }
 
 .product_name>p,
