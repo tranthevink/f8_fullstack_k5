@@ -14,13 +14,9 @@
         <h1>Best Seller</h1>
         <nav>
             <label for="skincare">Skincare</label>
-            <input type="radio" id="skincare" onchange="changeImage()">
             <label for="haircare">Haircare</label>
-            <input type="radio" id="haircare" onchange="changeImage()">
             <label for="cosmetics">Cosmetics Cases</label>
-            <input type="radio" id="cosmetics" onchange="changeImage()">
             <label for="fragrance">Fragrance</label>
-            <input type="radio" id="fragrance" onchange="changeImage()">
         </nav>
     </header>
     <section>
@@ -91,32 +87,6 @@
             </div>
         </div>
     </section>
-    <script>
-        function changeImage() {
-            var radioSkincare = document.getElementById('skincare');
-            var radioHaircare = document.getElementById('haircare');
-            var radioCosmetics = document.getElementById('cosmetics');
-            var radioFragrance = document.getElementById('fragrance');
-            var image1 = document.getElementById('image_1');
-            var image2 = document.getElementById('image_2');
-            var image3 = document.getElementById('image_3');
-            var image4 = document.getElementById('image_4');
-
-            if (radioSkincare.checked) {
-                image1.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
-            }
-            if (radioHaircare.checked) {
-                image2.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
-            }
-            if (radioCosmetics.checked) {
-                image3.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
-            }
-
-            if (radioFragrance.checked) {
-                image4.style.backgroundImage = "url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg)";
-            }
-        }
-    </script>
 </body>
 
 </html>

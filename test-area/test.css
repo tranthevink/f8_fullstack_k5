@@ -1,0 +1,11 @@
+label:hover {
+    color: red;
+}
+
+label:focus {
+    color: green;
+}
+
+label:active {
+    color: blue;
+}

@@ -133,3 +133,31 @@ label[for="fragrance"]:active {
     background-color: #28378e;
     color: white;
 }
+
+header:has( label[for="skincare"]:active)+section #image_1 {
+    width: 100%;
+    height: 150px;
+    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
+    background-size: 100%;
+}
+
+header:has( label[for="haircare"]:active)+section #image_2 {
+    width: 100%;
+    height: 150px;
+    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
+    background-size: 100%;
+}
+
+header:has( label[for="cosmetics"]:active)+section #image_3 {
+    width: 100%;
+    height: 150px;
+    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
+    background-size: 100%;
+}
+
+header:has( label[for="fragrance"]:active)+section #image_4 {
+    width: 100%;
+    height: 150px;
+    background: url("https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg") no-repeat center center;
+    background-size: 100%;
+}
