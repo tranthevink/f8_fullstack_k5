@@ -10,13 +10,14 @@ selector:pseudo_class{
 
  */
 
-.title:hover {
+
+/* .title:hover {
     color: red;
 }
 
 .title:active {
     color: green;
-}
+} */
 
 
 /* .btn:active {
@@ -24,20 +25,22 @@ selector:pseudo_class{
     color: white;
 } */
 
-.btn:focus {
+
+/* .btn:focus {
     color: red;
-}
+} */
 
 
 /* viết liền với nhau là chọn cùng 1 element */
 
-.username:focus::placeholder {
+
+/* .username:focus::placeholder {
     color: red;
 }
 
 .checkbox input:checked+span {
     color: red;
-}
+} */
 
 
 /* select the tag span is right after the tag input with disabled attribute, the tag input in the class checkbox */
@@ -66,12 +69,18 @@ selector:pseudo_class{
 /* select the tag h2 is the right first child of class products in a specific level*/
 
 
+/* (all elements is considered with the same parent, whatever type of tag they are) */
+
+
 /* .products h2:first-child {
     color: red;
 } */
 
 
 /* select the tag h2 is the right last child of class products in a specific level*/
+
+
+/* (all elements is considered with the same parent, whatever type of tag they are) */
 
 
 /* .products h2:last-child {
@@ -96,6 +105,23 @@ selector:pseudo_class{
 
 
 /* 
-nth-child
+nth-child (all elements is considered with the same parent, whatever type of tag they are)
 nth-of-type 
+
 */
+
+.products h2:nth-child(3) {
+    color: red;
+}
+
+.products h2:nth-of-type(3) {
+    color: green;
+}
+
+
+/* n is start from 0 */
+
+
+/* .products h2:nth-child(n+2) {
+    color: red;
+} */

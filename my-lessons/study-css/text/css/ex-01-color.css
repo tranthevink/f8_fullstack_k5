@@ -1,0 +1,41 @@
+/* 
+
+color: value
+type of value:
+- rgb
+- hls
+- hex
+- name of color
+
+color opacity
+
+color transparent
+
+common css attribute value:
+- initial (the default value of a browser)
+- inherit (the inherited value from the closest parent) 
+*/
+
+.title {
+    color: green;
+}
+
+.title:hover {
+    color: initial;
+}
+
+.sub-title {
+    color: rgb(17, 50, 238);
+}
+
+.sub-title-2 {
+    color: rgba(17, 50, 238, 0.548);
+}
+
+.text-1 {
+    color: #50ff40;
+}
+
+.text-2 {
+    color: #50ff4057;
+}

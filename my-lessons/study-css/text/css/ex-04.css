@@ -1,0 +1,70 @@
+/* 
+all the inline element is considered as a text 
+
+when apply text property, we need to apply for the block element,
+don't apply for inline element
+
+
+*/
+
+body p#item1 {
+    letter-spacing: 10px;
+}
+
+body p#item2 {
+    word-spacing: 10px;
+}
+
+body p#item3 {
+    /* line-height: 30px; */
+    font-size: 20px;
+    line-height: 2;
+}
+
+body p#item4 {
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration: underline overline line-through;
+}
+
+body p#item5 {
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+body p#item6 {
+    text-indent: -50px;
+    text-indent: 50px;
+}
+
+body p#item7 {
+    text-align: left;
+    text-align: center;
+    text-align: justify;
+}
+
+body div {
+    text-align: center;
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+}
+
+body span {
+    text-align: center;
+    text-align: justify;
+}
+
+body h1 {
+    word-wrap: break-word;
+}
+
+body h2 {
+    word-break: break-all;
+}
+
+body h3 {
+    white-space: nowrap;
+}

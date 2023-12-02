@@ -1,0 +1,54 @@
+/* 
+Changing the font of a text is by using
+font-family 
+serif: Họ font có chân
+sans-serif: Họ font không chân
+default font-weight is 400
+*/
+
+
+/* @font-face {
+    font-family: 'Svn Font box';
+    src: url("../fonts/SVN-Fontbox-Boathouse-Filled.otf");
+} */
+
+@font-face {
+    font-family: FontLato;
+    src: url("../fonts/lato-light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: FontLato;
+    src: url("../fonts/lato-regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: FontLato;
+    src: url("../fonts/lato-bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: FontLato;
+    src: url("../fonts/Lato-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: FontLato;
+    src: url("../fonts/Lato-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+body p {
+    /* the font-family is loaded from left to right if the left font-family doesn't work; */
+    /* font-family: 'Svn Font box', sans-serif; */
+    /* font-family: FontLato; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
