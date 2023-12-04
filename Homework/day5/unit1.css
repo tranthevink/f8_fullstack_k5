@@ -1,11 +1,21 @@
 table {
     width: 60%;
     border: solid 1px red;
+    padding: 30px;
 }
 
 td {
-    border-color: red;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.input-wrapper {
+    border-style: solid;
     border-width: 1px;
+    border-color: #cecece;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -30,15 +40,38 @@ td>p {
     font-family: 'Glyphicons Halflings';
 }
 
-#email_icon {
+#email_icon,
+#phone_icon {
     font-family: 'Material Icons';
 }
 
 input::placeholder {
     color: #cecece;
+    padding-left: 10px;
+}
+
+input {
+    display: inline-block;
+    width: 90%;
+    height: 100%;
+    border-radius: 0px;
+    border-width: 2px;
+    border: none;
 }
 
 .icon {
     background-color: #dddddd;
     color: white;
+}
+
+span.icon {
+    display: inline-block;
+    width: 5%;
+    margin-bottom: -2px;
+}
+
+.star_icon {
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 5%;
 }
