@@ -1,3 +1,44 @@
+table {
+    width: 60%;
+    border: solid 1px red;
+}
+
+td {
+    border-color: red;
+    border-width: 1px;
+}
+
 h1 {
     font-family: Lobster;
+    color: black;
+}
+
+body {
+    font-family: Lato;
+    color: #cecece;
+}
+
+#send_to_us_summary>span {
+    color: red;
+}
+
+td>p {
+    color: #cecece;
+}
+
+#user_name_icon {
+    font-family: 'Glyphicons Halflings';
+}
+
+#email_icon {
+    font-family: 'Material Icons';
+}
+
+input::placeholder {
+    color: #cecece;
+}
+
+.icon {
+    background-color: #dddddd;
+    color: white;
 }
