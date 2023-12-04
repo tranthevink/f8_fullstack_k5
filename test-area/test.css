@@ -1,11 +1,25 @@
-label:hover {
-    color: red;
+.Heart-shaped {
+    position: relative;
+    width: 100px;
+    height: 90px;
 }
 
-label:focus {
-    color: green;
+.Heart-shaped:before,
+.Heart-shaped:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
 }
 
-label:active {
-    color: blue;
+.Heart-shaped:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
