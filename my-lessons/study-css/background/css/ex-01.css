@@ -1,0 +1,52 @@
+/* 
+background-color:
+- name of color
+- hexa (#456585)
+- rgb (rgb(255, 255, 255)
+- rgba (255, 0, 0, 0.212)
+- hsl
+- ...
+background-image:
+background-repeat used to support for background-image: (repeat, no-repeat, repeat-x, repeat-y)
+background-position used to support for background-image: (left top default)
+background-size used to support for background-image: 200px (height auto)
+ba
+background: color image position/size repeat attachment
+
+*/
+
+.box {
+    /* background-color: rgba(255, 0, 0, 0.212); */
+    color: white;
+    /* height: 2000px; */
+}
+
+.box2 {
+    /* background-image: url("https://picsum.photos/200/200"); */
+    /*default*/
+    /* background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat; */
+    /* default */
+    /* background-position: 30px 10px;
+    background-position: center top;
+    background-position: right top;
+    background-position: 100% top;
+    background-position: center 100%;
+    background-position: left top;
+    background-size: 200px 500px;
+    background-size: 100%; */
+}
+
+body {
+    background-image: url("https://picsum.photos/200/200");
+    background-color: red;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    /* background: black url("url") no-repeat left top / 100% auto fixed; */
+    /* background-attachment: fixed; */
+    /* background-clip: text; */
+    /* height: 2000px; */
+}
