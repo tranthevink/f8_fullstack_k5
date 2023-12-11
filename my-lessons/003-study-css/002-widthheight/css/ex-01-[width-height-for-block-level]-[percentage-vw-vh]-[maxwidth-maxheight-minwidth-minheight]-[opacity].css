@@ -1,0 +1,46 @@
+/* 
+- width, height doesn't apply for inline tags except the replaced inline tags or form tags (button) because the browser affects on them 
+- % unit based on the parent tag 
+- vw unit (viewport width) 
+- vh unit (viewport .height)  
+with the replaced inline tags, the browser treats them as the inline-block
+
+- max-width
+- max-height
+- min-width
+- min-height
+ */
+
+body {
+    height: 2000px;
+    background-color: green;
+}
+
+.main {
+    /* height: 400px; */
+    background-color: yellow;
+}
+
+.box {
+    background: red;
+    width: 300px;
+    /* 100% height of viewport  */
+    /* height: 100vh; */
+}
+
+.box1 {
+    width: 600px;
+    border: 5px solid blue;
+    /* line-height: 0; */
+    /* font-size: 0; */
+}
+
+.box1 img {
+    max-width: 100%;
+    min-width: 50%;
+    display: block;
+}
+
+.box1:hover {
+    opacity: 0.1;
+}

@@ -1,0 +1,26 @@
+/* 
+padding on 4 direction with block-level tag
+padding on 2 direction with inline-level
+
+the same rules are also applied for margin
+*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    /* 4 directions */
+    padding: 20px;
+    /* top-bottom and leftright */
+    padding: 10px 20px;
+    /* top and left-right and bottom */
+    padding: 10px 20px 30px;
+    /* top right bottom left */
+    padding: 10px 20px 30px 40px;
+}
+
+.lists span {
+    border: 2px solid green;
+    padding: 20px 30px;
+    display: inline-block;
+}

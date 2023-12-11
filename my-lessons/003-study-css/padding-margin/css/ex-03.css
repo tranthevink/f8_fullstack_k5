@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.box {
+    background: green;
+    width: 400px;
+    height: 300px;
+    color: white;
+    overflow: auto;
+}
+
+.box h2 {
+    /* based on width of the parent */
+    padding-top: 70%;
+    background-color: red;
+}

@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* width is calculated based on the border */
+    box-sizing: border-box;
+}
+
+.box {
+    width: 80%;
+    /* height: auto;
+    background-color: green;
+    color: white; */
+    margin: 30px;
+    /* padding: 30px; */
+    border: 1px solid red;
+    /* width is calculated based on the content */
+    /* box-sizing: content-box; */
+    font-size: 0;
+}
+
+.box .col {
+    width: calc(100%/3);
+    display: inline-block;
+    background-color: gray;
+    font-size: initial;
+    border: 1px solid white;
+}

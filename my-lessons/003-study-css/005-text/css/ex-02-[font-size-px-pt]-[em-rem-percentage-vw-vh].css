@@ -1,0 +1,42 @@
+/* 
+units of size measurement in css:
+1. absolute units
+- pixel (px)
+- point (pt) (1pt = 1.3px)
+2. relative units
+- em (relative to the current font)
+- rem (relative to the root element)
+- % (relative to the parent element)
+- vw (study at width, height lessons)
+- vh (study at width, height lessons)
+*/
+
+
+/* font-size: value */
+
+
+/* the html tag is used for changing the default font-size of the browser */
+
+html {
+    font-size: 20px;
+}
+
+.content {
+    font-size: 30px;
+}
+
+.content .text-1 {
+    font-size: 2em;
+}
+
+.content .text-2 {
+    font-size: 60px;
+}
+
+.content .text-3 {
+    font-size: 2rem;
+}
+
+.content .text-3 span {
+    font-size: 2em;
+}

@@ -1,0 +1,93 @@
+.box {
+    width: 200px;
+    height: 200px;
+    /*topbottom and leftright*/
+    border-width: 5px 10px;
+    /*top and leftright and bottom*/
+    border-width: 5px 10px 15px;
+    /*top right bottom left*/
+    border-width: 5px 10px 15px 20px;
+    /*topbottom and leftright*/
+    border-style: dashed dotted;
+    /*top and leftright and bottom*/
+    border-style: dotted dotted dashed;
+    /*top right bottom left*/
+    border-style: double dotted dotted dashed;
+    border-style: solid;
+    /*topbottom and leftright*/
+    border-color: red green;
+    /*top and leftright and bottom*/
+    border-color: red green yellow;
+    /*top right bottom left*/
+    border-color: red green yellow blue;
+    border: 5px solid red;
+    border-left: 10px dotted green;
+    border-left-width: 5px;
+    border-right-style: dashed;
+    border-top-color: dashed;
+}
+
+.box1 {
+    width: 0px;
+    height: 0px;
+    border-color: red green blue yellow;
+    border-width: 100px;
+    border-style: solid;
+    border-top-width: 0px;
+}
+
+.box2 {
+    width: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+.left,
+.right {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.left {
+    margin-right: -20px;
+}
+
+.bottom {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    rotate: 45deg;
+    margin-top: -61px;
+    margin-left: 40px;
+}
+
+.Heart-shaped {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    background-color: #333333;
+}
+
+.Heart-shaped:before,
+.Heart-shaped:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.Heart-shaped:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}

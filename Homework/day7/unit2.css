@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 120vw;
+    height: 400px;
+    background-image: url('https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg');
+    background-size: 100vw 400px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.logo {
+    background-color: white;
+    width: 17%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+
+.general-info-container {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 420px;
+    height: 45%;
+}
+
+.general-info {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 13px;
+}
+
+#coporate-name {
+    margin: 20px 10px 20px;
+    position: absolute;
+    top: 0px;
+}
+
+.created-year,
+.numbers-of-projects {
+    font-size: 30px;
+}
+
+.general-info>div:last-child>label {
+    margin-left: 20px;
+}

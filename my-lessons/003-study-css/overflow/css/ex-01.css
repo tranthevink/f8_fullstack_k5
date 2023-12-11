@@ -1,0 +1,25 @@
+/* 
+overflow sẽ quyết định các nội dung bị tràn sẽ như thế nào:
+- Giữ nguyên (visible)
+- Ẩn đi (hidden)
+- Tạo thanh cuộn (scroll, auto) 
+*/
+
+.box {
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    /*default*/
+    overflow: visible;
+    overflow: hidden;
+    /* always reserve a space for scroll */
+    overflow: scroll;
+    /* only take the space for scroll when the child is overflow its parent */
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.box p {
+    width: 400px;
+}

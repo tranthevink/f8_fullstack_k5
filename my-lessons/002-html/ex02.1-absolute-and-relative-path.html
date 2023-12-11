@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute and Relative path</title>
+    <style>
+        h2 span {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="ex01.html" target="_blank" title="href=&quot;ex01.html&quot; --&gt current-folder\ex01.html">
+            ex01
+        </a>
+    </div>
+    <div>
+        <a href="./ex01.html" target="_blank" title="href=&quot;./ex01.html&quot; --&gt current-folder\ex01.html">
+            ex01
+        </a>
+    </div>
+    <div>
+        <a href="//fullstack-nodejs.fullstack.edu.vn/" target="_blank"
+            title="href=&quot;//fullstack-nodejs.fullstack.edu.vn/&quot; --&gt current-protocol//fullstack-nodejs.fullstack.edu.vn/">
+            get current protocol for the link
+        </a>
+    </div>
+
+    <div>
+        <a href="../home/home1.html" target="_blank"
+            title="href=&quot;../home/home1.html&quot; --&gt parent-of-current-folder/home/home1.html">
+            open the file from other folders
+        </a>
+    </div>
+    <div>
+        <a href="/Homework/Day1/" target="_blank"
+            title="href=&quot;/Homework/Day1/&quot; --&gt project-folder/Homework/Day1/">
+            root
+        </a>
+    </div>
+    <div>
+        <a href="" title="href=&quot;&quot; --&gt current-file">
+            empty url will point to the current file
+        </a>
+    </div>
+    <!-- 
+        1. Phân biệt đường dẫn tương đối và đường dẫn tuyệt đối?
+
+        2. Phân biệt các đường dẫn sau là tương đối hay tuyệt đối
+            /duong dan > tuyệt đối
+            ./duong-dan > tương đối
+            duong-dan  > tương đối
+            ../../duong-dan > tương đối
+            https://domain.com > tuyệt đối
+            //domain.com > tuyệt đối
+     -->
+</body>
+
+</html>

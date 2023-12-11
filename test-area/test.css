@@ -1,38 +1,11 @@
-#p1 {
-    text-align: center;
-    color: red;
-    background-color: blue;
+.content {
+    background-color: red;
+    width: 50%;
+    height: 200px;
+    margin-bottom: 50px;
 }
 
-#p2 {
-    text-align: center;
-    color: red;
-    background-color: blue;
-}
-
-#h1 {
-    text-align: center;
-    color: red;
-    background-color: blue;
-}
-
-#p3 {
-    text-align: center;
-    color: red;
-    background-color: blue;
-    font-size: large;
-}
-
-#p4 {
-    text-align: center;
-    color: red;
-    background-color: blue;
-    font-size: small;
-}
-
-#h2 {
-    text-align: center;
-    color: red;
-    background-color: blue;
-    font-size: small;
+.box {
+    background-color: green;
+    border: 1px solid green;
 }
