@@ -1,7 +1,16 @@
+@font-face {
+    font-family: 'SFU';
+    src: url(font-sfu/FONT/COLLECTION/SFUBlackoutRegular.TTF);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header {
+    font-family: SFU;
 }
 
 .banner {

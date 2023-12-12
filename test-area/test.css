@@ -1,11 +1,17 @@
-.content {
-    background-color: red;
-    width: 50%;
-    height: 200px;
-    margin-bottom: 50px;
+.black-panel {
+    background-color: rgba(0, 0, 0, 0.521);
+    position: fixed;
+    inset: 0px;
 }
 
-.box {
-    background-color: green;
-    border: 1px solid green;
+.float-content {
+    background-color: red;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 200px;
+    z-index: 100;
+    margin: 0 auto;
 }

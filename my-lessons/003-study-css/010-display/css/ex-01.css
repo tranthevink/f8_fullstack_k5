@@ -1,0 +1,41 @@
+/* 
+display will change the displaying mode of a html tag
+- block (change element into block level)
+- inline (change element into block level)
+- inline-block (change element into block level and inline level)
+- none (hide the element, the element will be lost its space)
+
+additional values (in other lessons):
+- flex
+- inline-flex
+- grid
+- list-item
+- table
+- table-cell
+*/
+
+.title {
+    display: inline;
+    background-color: yellow;
+}
+
+.title:hover {
+    /* display: none; */
+    /* opacity: 0; */
+    /* default value */
+    /* visibility: visible;
+    visibility: hidden; */
+}
+
+.links {
+    font-size: 0;
+}
+
+.link {
+    /* width: 100px; */
+    height: 100px;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    font-size: initial;
+}

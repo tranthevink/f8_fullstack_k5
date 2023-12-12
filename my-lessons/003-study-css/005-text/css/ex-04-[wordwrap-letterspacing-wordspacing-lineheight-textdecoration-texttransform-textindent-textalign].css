@@ -1,8 +1,8 @@
 /* 
 all the inline element is considered as a text 
-
 when apply text property, we need to apply for the block element,
-don't apply for inline element
+don't apply for inline element. It means that we use the text property
+on the block element and then the child inline element of it will be affected.
 
 
 */

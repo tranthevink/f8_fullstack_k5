@@ -1,0 +1,123 @@
+/*
+ 1) position help to change the position of html elements:
+ - static | relative | absolute | fixed
+ 2) additional values (only work when having the position property except static):
+ - top | left | right | bottom | z-index | inset
+
+ 3) relative: relative to the normal position
+ 4) absolute: 
+ - the item with absolute property is considered not exist (without left, right, bottom, top value)
+ - the absolute element will relative to the closet element with relative property (default is the body)
+ 5) fixed: is same as the absolute, but fixed always gets the body as its parent
+ 6) if the element has the position property, it will be set z-index greater than the none-position element
+ 7) the default z-index is 0
+ 8) inset is the same the border or padding or margin
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+.box {
+    border: 1px solid red;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.box .content {
+    border: 1px solid green;
+    position: relative;
+}
+
+.box .content .item {
+    background-color: blueviolet;
+    width: 200px;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* .box .content .item:nth-child(2) { */
+
+
+/* margin-top: -20px;
+    margin-left: -20px; */
+
+
+/* position: relative;
+    top: 200px;
+    left: calc(100% - 200px); */
+
+
+/* } */
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* .box .content .item:nth-child(2) { */
+
+
+/* margin-top: -20px;
+    margin-left: -20px; */
+
+
+/* position: absolute;
+    top: 50%;
+    left: 50%; */
+
+
+/* right: 0px;
+    bottom: 0px; */
+
+
+/* inset: 10px 20px 30px 40px; */
+
+
+/* width: auto;
+    height: auto; */
+
+
+/* background-color: rgba(0, 0, 0, 0.432); */
+
+
+/* } */
+
+
+/* ------------------------------------------------------------------------------------- */
+
+
+/* .box .content .item:nth-child(2) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+
+
+/* ------------------------------------------------------------------------------------- */
+
+.box .content .item:nth-child(2) {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    /* z-index: 9; */
+}
+
+.box .content .item:nth-child(3) {
+    position: relative;
+}
+
+.box .content .item:nth-child(4) {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+}
