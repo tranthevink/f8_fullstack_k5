@@ -1,0 +1,26 @@
+.front {
+    position: relative;
+    color: green;
+}
+
+.behind {
+    position: absolute;
+    bottom: 0;
+    color: red;
+}
+
+.hidder {
+    transition: top 1s ease;
+    position: absolute;
+    width: 100%;
+    /* background-color: yellow; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    overflow: hidden;
+}
+
+.front:hover .hidder {
+    top: 0;
+}

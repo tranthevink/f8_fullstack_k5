@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.icons {
+    font-size: 30px;
+    color: red;
+}
+
+.icons i {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.box h2::before {
+    font-family: 'Font Awesome 6 Brands';
+    color: red;
+}
+
+.box h2.facebook::before {
+    content: "\f09a";
+}
+
+.box h2.twitter::before {
+    content: "\f081";
+}
+
+.box h2.instagram::before {
+    content: "\e055";
+}

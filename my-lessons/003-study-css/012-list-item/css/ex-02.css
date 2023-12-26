@@ -1,0 +1,83 @@
+/* 
+Có 2 cách chuyển thành list:
+1) Chuyển thẻ h2 thành dạng list-item (sau đó nó sẽ được đối xử như thẻ li)
+2) dùng counter 
+
+Các bước tạo bộ đếm trong CSS
+1) Khởi tạo bộ đếm (tên là gì, ở đâu)
+2) Chạy bộ đếm (tên gì, ở đâu)
+3) Hiển thị bộ đếm
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.songs {
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid red;
+}
+
+.songs h2 {
+    display: list-item;
+    list-style: inside decimal-leading-zero;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+.songs2 {
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid red;
+    counter-reset: song-number;
+}
+
+.songs2 h2 {
+    padding: 7px 0;
+    counter-increment: song-number;
+}
+
+.songs2 h2::before {
+    content: "#" counter(song-number);
+    display: inline-block;
+    width: 25px;
+    height: 22px;
+    background: green;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.songs2 .children {
+    counter-reset: song-children;
+}
+
+.songs2 .children h2 {
+    counter-increment: song-children;
+}
+
+.songs2 .children h2::before {
+    content: counter(song-number) "." counter(song-children);
+}
+
+.box1 {
+    counter-reset: song-number;
+}
+
+.box1 h2 {
+    counter-increment: song-number;
+}
+
+.box1 h2::before {
+    content: counter(song-number);
+}
+
+.box ul {
+    list-style: decimal;
+}

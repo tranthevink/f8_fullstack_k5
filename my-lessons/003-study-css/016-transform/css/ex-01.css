@@ -1,0 +1,65 @@
+/* 
+    transform dùng để thay đổi hình dạng của các thẻ html:
+        - Xoay
+            rotate(3600deg);
+            rotateX(180deg);
+            rotateY(180deg);
+        - Phóng to, thu nhỏ:
+            scale(value) (x = y)
+            scale(x, y)
+            scaleX(x)
+            scaleY(y)
+        - Nghiêng
+             skew(value) (x = y)
+             skew(x, y)
+             skewX(x)
+             skewY(y)
+        - Di chuyển
+             translate(x, y)
+             translateX(x)
+             translateY(y)
+             translateZ(z) (only for 3D)
+             Note: translate and position relative is very similar, but
+                    the difference is when using percentage, 
+                    (position following the parent, the translate following the its own size)
+                    left: 50%, translate(50%)
+*/
+
+.wrap {
+    padding: 30px;
+    border: 1px solid red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    transition: all 0.5s linear;
+    top: 0;
+    left: 0;
+}
+
+.wrap:hover .box {
+    /* transform: rotate(3600deg);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: scale(1.5);
+    transform: scale(5, 1);
+    transform: scale(1, 5);
+    transform: scale(0.5, 1);
+    transform: rotate(60deg) scale(10); */
+    /* transform: skew(30deg, 0deg);
+    transform: skew(0, 30deg); */
+    /* transform: skewX(80deg); */
+    /* rotate: 30deg; */
+    /* scale: 1; */
+    transform: translate(100px, 100px);
+    /* position: relative;
+    top: 100px;
+    left: 100px */
+}
