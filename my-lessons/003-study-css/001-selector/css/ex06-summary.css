@@ -1,0 +1,69 @@
+div#id.same-element-class .inner-class>.top-level-child[src="toplevelchild"]+.just-after-element[href^="beginning"]+a[href*="containing"]+a[href~="containingtheword"]+a[href$="endwith"]~.after-element[checked]+*[src="all-elements"] {
+    background-color: red;
+}
+
+.pseudo-element::before {
+    content: "beforeCannotSelect";
+    color: red;
+}
+
+.pseudo-element::after {
+    content: "afterCannotSelect";
+    color: red;
+}
+
+.pseudo-element::first-letter {
+    font-size: 5em;
+}
+
+.pseudo-element::first-line {
+    text-decoration: line-through red dotted;
+}
+
+.pseudo-element::selection {
+    background-color: black;
+    color: yellow;
+}
+
+.disable-user-selection {
+    user-select: none;
+}
+
+input[type="tel"][placeholder="0817-652-131"]::placeholder {
+    color: blueviolet;
+    font-style: italic;
+}
+
+input[type="text"]:active {
+    background-color: green;
+}
+
+input:hover {
+    background-color: aqua;
+}
+
+input:active,
+disable-user-selection:active {
+    background-color: yellow;
+}
+
+#test {
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+}
+
+#test1 {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+}
+
+div {
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+span {
+    font-size: 1ex;
+}

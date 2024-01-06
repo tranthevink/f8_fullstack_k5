@@ -1,3 +1,8 @@
+/* 
+    @font-face:
+        Mỗi file font có thể có nhiều font-weight hoặc chỉ có 1 font-weight
+*/
+
 * {
     padding: 0;
     margin: 0;
