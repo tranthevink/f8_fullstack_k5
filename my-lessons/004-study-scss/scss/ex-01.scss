@@ -1,0 +1,13 @@
+/*Demo SCSS*/
+
+//sass scss/ex-01.scss css/style.min.css --style compressed
+//sass scssfolder:cssfolder
+.header h1 {
+    padding: 30px;
+    span {
+        display: block;
+    }
+    h2 {
+        color: #333;
+    }
+}

@@ -1,0 +1,61 @@
+//Comment in SCSS
+
+/*Comment in CSS*/
+
+//Nested syntax: selector, attribute (shouldn't use)
+@import "parts/variables";
+@import "parts/header";
+@import "parts/footer";
+.box {
+    padding: 30px;
+    background: grey;
+    .test {
+        color: green;
+    }
+}
+
+%section-base {
+    color: red;
+    margin: 20px;
+    .test-nested {
+        border: 1px solid blue;
+    }
+}
+
+@mixin section-base {
+    background-color: aliceblue;
+}
+
+@mixin center($width, $space:0, $type: "margin") {
+    @if($type=="margin") {
+        max-width: $width;
+        margin: $space auto;
+    }
+    @else if ($type=="flex") {
+        display: flex;
+        .inner {
+            max-width: $width;
+        }
+    }
+}
+
+.posts {
+    box-shadow: 5px 5px 10px #ccc;
+    @extend .box;
+    @extend %section-base;
+    @include section-base;
+}
+
+.products {
+    border-radius: 20px;
+    @extend .box;
+    @extend %section-base;
+    @include section-base;
+}
+
+.test-mixin {
+    border-radius: 20px;
+    @include section-base;
+    // @include center(500px, 30px);
+    @include center(500px, 0, "flex");
+}

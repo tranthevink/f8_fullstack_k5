@@ -1,0 +1,81 @@
+/*
+Câu lệnh rẽ nhánh
+- Thực thi 1 đoạn code dựa vào 1 điều kiện nào đó
+Syntax:
+@if (conditionalExpression) {
+    do something when the condition is true
+} @else{
+    do something when the condition is false
+}
+
+comparison Operator:
+    ==
+    >
+    <
+    >=
+    <=
+    !=
+logic Operator: 
+    and
+    or
+    not
+
+arithmetical Operator: 
+    +
+    -
+    *
+    /
+    %
+Boolean Data type: 
+     true
+     false
+*/
+
+.header {
+    $isTopBar: false;
+    @if($isTopBar) {
+        .top-bar {
+            display: flex;
+            color: $primaryColor;
+            font-size: var(--font-size);
+            text: {
+                decoration: underline;
+                align: center;
+                transform: uppercase;
+            }
+        }
+    }
+    @else {
+        .auth-link {
+            color: green;
+        }
+    }
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    nav {
+        &.menu {
+            display: flex;
+            >li {
+                >a {
+                    display: block;
+                    &:hover {
+                        color: black;
+                        &::before {
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        padding: 10px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

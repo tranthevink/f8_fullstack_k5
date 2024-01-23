@@ -1,0 +1,28 @@
+//Variables start with $
+//Names of the variables follow camelCase
+$primaryColor:blue;
+$secondaryColor: green;
+$primaryBackgroundColor: blueviolet;
+$font: Roboto,
+sans-serif;
+$a: "f8";
+$b:10;
+$c:50;
+$d: color;
+:root {
+    --font-size: 13px;
+}
+
+.box {
+    font-size: #{$b}px;
+    width: #{$c + 0%};
+    #{$d}: #ccc;
+}
+
+#{"." + $a} {
+    width: 120%;
+}
+
+##{$a} {
+    width: 120%;
+}

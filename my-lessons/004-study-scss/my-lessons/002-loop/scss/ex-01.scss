@@ -1,0 +1,78 @@
+//@for loop
+//while loop (rarely used)
+//@each loop
+//-----------------------------------------
+// @for $i from 1 through 12 {
+//     .col-#{$i} {
+//         width: 100% / (12 / $i);
+//     }
+// }
+//-----------------------------------------
+// @for $i from 1 to 12 {
+//     .col-#{$i} {
+//         width: 100% / (12 / $i);
+//     }
+// }
+//-----------------------------------------
+// @for $i from 1 through 12 {
+//     @if($i % 2==0) {
+//         .col-#{$i} {
+//             width: 100% / (12 / $i);
+//         }
+//     }
+// }
+//-----------------------------------------
+// $sizes: 30,
+// 50,
+// 70,
+// 90; //Array
+// $index: 0;
+// @each $size in $sizes {
+//     $index: $index + 1;
+//     .item-#{$size} {
+//         @if ($index==length($sizes)) {
+//             width: 100%;
+//         }
+//         @else {
+//             width: 2 * $size + 0%;
+//         }
+//     }
+// }
+//-----------------------------------------
+// $sizes: (small, normal, 40)(regular, bold, 60)(large, 900, 80);
+// @each $type,
+// $weight,
+// $size in $sizes {
+//     .#{$type} {
+//         font-weight: $weight;
+//         width: #{$size}px;
+//     }
+// }
+//-----------------------------------------
+//key: value --> map
+// $sizes: (small: 40, regular: 60, large: 80);
+// @each $type,
+// $size in $sizes {
+//     .column-#{$type} {
+//         width: #{$size}px;
+//     }
+// }
+//-----------------------------------------
+// .box {
+//     width: 100%;
+//     height: auto;
+//     color: #333;
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+//     .item {
+//         @media screen and (max-width: 767px) {
+//             display: none;
+//         }
+//     }
+// }
+// @media screen and (max-width: 767px) {
+//     .box {
+//         display: none;
+//     }
+// }

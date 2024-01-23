@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*Comment in CSS*/
+:root {
+  --font-size: 13px;
+}
+
+.box, .products, .posts {
+  font-size: 10px;
+  width: 50%;
+  color: #ccc;
+}
+
+.f8 {
+  width: 120%;
+}
+
+#f8 {
+  width: 120%;
+}
+
+/*
+Câu lệnh rẽ nhánh
+- Thực thi 1 đoạn code dựa vào 1 điều kiện nào đó
+Syntax:
+@if (conditionalExpression) {
+    do something when the condition is true
+} @else{
+    do something when the condition is false
+}
+
+comparison Operator:
+    ==
+    >
+    <
+    >=
+    <=
+    !=
+logic Operator: 
+    and
+    or
+    not
+
+arithmetical Operator: 
+    +
+    -
+    *
+    /
+    %
+Boolean Data type: 
+     true
+     false
+*/
+.header .auth-link {
+  color: green;
+}
+.header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.header nav.menu {
+  display: flex;
+}
+.header nav.menu > li > a {
+  display: block;
+}
+.header nav.menu > li > a:hover {
+  color: black;
+}
+.header nav.menu > li > a:hover::before {
+  content: "";
+}
+.header .logo {
+  padding: 10px;
+}
+.header .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.box, .products, .posts {
+  padding: 30px;
+  background: grey;
+}
+.box .test, .products .test, .posts .test {
+  color: green;
+}
+
+.products, .posts {
+  color: red;
+  margin: 20px;
+}
+.products .test-nested, .posts .test-nested {
+  border: 1px solid blue;
+}
+
+.posts {
+  box-shadow: 5px 5px 10px #ccc;
+  background-color: aliceblue;
+}
+
+.products {
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+
+.test-mixin {
+  border-radius: 20px;
+  background-color: aliceblue;
+  display: flex;
+}
+.test-mixin .inner {
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=ex-01.css.map */
