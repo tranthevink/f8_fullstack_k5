@@ -2,6 +2,7 @@ let btn = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
     let n = parseInt(prompt("Nhập số n:"));
+    document.getElementById("show").innerText = "";
     draw(n);
 });
 
@@ -15,6 +16,8 @@ function draw(numberOfLines) {
             currentValue++;
             tempValue--;
         }
-        console.log(`${tempString.trim()}\n`);
+        let li = document.createElement("li");
+        li.innerText = `${tempString.trim()}`;
+        document.getElementById("show").appendChild(li);
     }
 }
