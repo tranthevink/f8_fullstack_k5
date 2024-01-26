@@ -9,6 +9,7 @@ let level6 = 2927;
 btn.addEventListener("click", () => {
     let electricFee = 0;
     let numbersOfKWh = prompt("Nhập số kWh sử dụng:");
+    let temp = numbersOfKWh;
     while (numbersOfKWh > 0) {
         if (numbersOfKWh >= 401) {
             let appliedKwhForCurrentLevel = numbersOfKWh - 400;
@@ -40,5 +41,5 @@ btn.addEventListener("click", () => {
             numbersOfKWh = numbersOfKWh - appliedKwhForCurrentLevel;
         }
     }
-    show.innerText = `${numbersOfKWh}KWh => ${electricFee} vnđ`;;
+    show.innerText = `${temp}KWh => ${electricFee} vnđ`;;
 });
