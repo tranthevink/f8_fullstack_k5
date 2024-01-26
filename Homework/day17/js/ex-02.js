@@ -40,5 +40,5 @@ btn.addEventListener("click", () => {
             numbersOfKWh = numbersOfKWh - appliedKwhForCurrentLevel;
         }
     }
-    show.innerText = electricFee;
+    show.innerText = `${numbersOfKWh}KWh => ${electricFee} vnđ`;;
 });
