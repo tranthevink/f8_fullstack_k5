@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<HEAD>
+    <TITLE>Comparison of positioning schemes</TITLE>
     <style>
-        .float-box {
-            float: left;
+        div {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .first {
+            background-color: green;
+            margin-top: -15px;
+        }
+        
+        .second {
+            background-color: rgb(255, 0, 0);
             width: 150px;
             height: 150px;
-            background-color: lightblue;
+            position: sticky;
+            top: 300px;
+            border: 5px solid green
         }
         
-        .parent {
+        .third {
+            background-color: blue;
             position: absolute;
-        }
-        
-        p {
-            clear: both;
+            top: 100px;
+            z-index: -10;
         }
     </style>
-</head>
+</HEAD>
 
-<body>
-    <div class="parent">
-        <!-- <div class="float-box"></div> -->
-        <p>Hello</p>
+<BODY>
+    <div class="second">
+        <div class="third"></div>
     </div>
+    <div class="first"></div>
 
-</body>
+
+</BODY>
 
 </html>
