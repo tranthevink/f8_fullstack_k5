@@ -35,7 +35,7 @@ btn.addEventListener("click", () => {
     if (inputNumber < 0 || inputNumber > 9999) {
         alert("Please type the number from 0 to 9999!");
     }
-    shower.innerText = `Word forms: ${inputNumber}: ${convertToWord(inputNumber)}`;
+    shower.innerText = `the word form: ${inputNumber}: ${convertToWord(inputNumber)}`;
 });
 
 function convertToWord(inputNumber) {
