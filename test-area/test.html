@@ -1,48 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<HTML>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <button>Update</button>
-     <canvas></canvas>
-
-    <script>
-        const btn = document.querySelector("button");
-        const canvas = document.querySelector("canvas");
-        const ctx = canvas.getContext("2d");
-
-        document.addEventListener("DOMContentLoaded", () => {
-            canvas.width = document.documentElement.clientWidth;
-            canvas.height = document.documentElement.clientHeight;
-        });
-
-        function random(number) {
-            return Math.floor(Math.random() * number);
+<HEAD>
+    <TITLE>Comparison of positioning schemes</TITLE>
+    <style>
+        body {
+            display: block;
+            font-size: 12px;
+            line-height: 200%;
+            width: 250px;
+            height: 500px;
+            background-color: green;
+            border: 2px solid yellow;
         }
 
-        function draw() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            for (let i = 0; i < 300; i++) {
-                ctx.beginPath();
-                ctx.fillStyle = `rgb(${random(256)},${random(256)}, ${random(256)})`;
-                ctx.arc(
-                    random(canvas.width),
-                    random(canvas.height),
-                    random(30),
-                    0,
-                    2 * Math.PI,
-                );
-                ctx.fill();
-            }
+        p {
+            display: block;
+            background-color: blue;
         }
-        setInterval(draw, 1000);
-        // btn.addEventListener("click", draw);
-    </script>
-</body>
 
-</html>
+        span {
+            display: inline;
+        }
+
+        #outer {
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            width: 200px;
+            color: red;
+            background-color: aqua;
+        }
+
+        #inner {
+            color: blue
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <P>Beginning of body contents.
+        <SPAN id=outer>
+            Start of outer contents.
+            <SPAN id=inner> Inner contents.</SPAN>
+            End of outer contents.
+        </SPAN>
+        End of body contents.
+    </P>
+</BODY>
+
+</HTML>
