@@ -10,11 +10,14 @@ var insertedArrayElement = document.getElementById("inserted-array");
 
 
 var tempArray = [];
-originalArrayElement.textContent = `the original array: ${theGivenArray.join(", ")}`;
+originalArrayElement.textContent = theGivenArray ? `the original array: ${theGivenArray.join(", ")}` : `the original array: Empty`;
 insertedElement.textContent = `the inserted element: ${insertedValue}`;
 insertingBtn.disabled = true;
 
 sortingBtn.addEventListener("click", () => {
+    if (!isValidArray()) {
+        return;
+    }
     sort(theGivenArray);
     sortedArrayElement.textContent = `the sorted array: ${theGivenArray.join(", ")}`;
     insertingBtn.disabled = false;
@@ -22,6 +25,12 @@ sortingBtn.addEventListener("click", () => {
 
 
 insertingBtn.addEventListener("click", () => {
+    if (!isValidArray()) {
+        return;
+    }
+    if(isNaN(insertedValue)){
+        insertedElement.textContent = `the inserted value must be a number`;
+    }
     var insertedIndex = findInsertedIndex(insertedValue, theGivenArray);
 
     theGivenArray = insertAt(insertedValue, insertedIndex, theGivenArray);
@@ -31,6 +40,17 @@ insertingBtn.addEventListener("click", () => {
     insertedElement.textContent = `the inserted element: ${insertedValue}`;
 });
 
+function isValidArray() {
+    if (!theGivenArray || theGivenArray.length === 0) {
+        sortedArrayElement.textContent = `The input array must not be empty .`;
+        return;
+    }
+    if (!containsOnlyIntegers(theGivenArray)) {
+        sortedArrayElement.textContent = `The input array must contain integer numbers only`;
+        return false;
+    }
+    return true;
+}
 
 //selection sort
 function sort(array) {
@@ -77,6 +97,14 @@ function insertAt(insertedValue, insertedIndex, sortedArray) {
     if (!inserted)
         tempArray[tempArray.length] = insertedValue;
     return tempArray;
+}
+function containsOnlyIntegers(inputArray) {
+    for (const index in inputArray) {
+        if (inputArray[index] % 1 !== 0) {
+            return false;
+        }
+    }
+    return true;
 }
 
 
