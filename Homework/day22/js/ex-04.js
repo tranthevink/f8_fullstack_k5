@@ -1,0 +1,1 @@
+var theSuitableArray = [["image1","title1","content1"], ["image2","title2","content2"], ["image3","title3","content3"]];
