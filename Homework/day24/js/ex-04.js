@@ -21,4 +21,4 @@ var reducingArray1WithInitialValue = array1.reduce2((prev, current, index) => pr
 console.log(reducingArray1WithInitialValue);
 var reducingArray1WithoutInitialValue = array1.reduce2((prev, current, index) => prev + current);
 console.log(reducingArray1WithoutInitialValue);
-[].reduce((prev, current, index) => prev + current);
+// [].reduce((prev, current, index) => prev + current);

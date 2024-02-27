@@ -10,4 +10,4 @@ function sum(...theArgs) {
 
 
 console.log(sum(3, 4, 7));
-console.log(sum(3, 4, 7, "a"));
+// console.log(sum(3, 4, 7, "a"));
