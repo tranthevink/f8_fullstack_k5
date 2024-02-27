@@ -37,6 +37,8 @@ handleRegister(
     "1234567",
     "nguyenvanb@email.com"
 );
-
+console.log(systemUsers);
 const dataLogin = handleLogin("nguyenvanb@email.com", "1234567");
 console.log(dataLogin);
+const dataLogin2 = handleLogin("nguyenvanb@email.com", "1234568");
+console.log(dataLogin2);
