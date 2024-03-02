@@ -66,7 +66,7 @@ document.body.appendChild(selectionElement);
 browseHierarchicalArray(categories, 0);
 function browseHierarchicalArray(array, level) {
     array.forEach(arrayItem => {
-        let optionElement = document.createElement("option");
+        let optionElement   = document.createElement("option");
         for (let index = 1; index <= level; index++) {
             optionElement.text += "--|";
         }
